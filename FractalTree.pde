@@ -1,6 +1,6 @@
 private double fractionLength = .8; 
 private int smallestBranch = 10; 
-private double branchAngle = .2;  
+private double branchAngle = .4;  
 public void setup() 
 {   
 	size(640,480);    
@@ -15,7 +15,7 @@ public void draw()
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
-	double angle1 = angle + branchAngle;
+	double angle1 = angle + branchAngle/2;
 	double angle2 = angle - branchAngle;
 	branchLength*=fractionLength;
 	int endX1 = (int)(branchLength*Math.cos(angle1) + x);
